@@ -1,4 +1,8 @@
-export default (state={}, action) => {
+const initialState = {
+
+}
+
+export default (state=initialState, action) => {
   switch (action.type) {
     case 'FETCH_DECK':
       return {
@@ -59,6 +63,10 @@ export default (state={}, action) => {
           {name:"King of Hearts", value: 10}
         ]
       }
+    // case 'SET_AI_CARDS':
+    //   return {
+    //     React.cloneElement()
+    //   }
 
     default:
       return state
